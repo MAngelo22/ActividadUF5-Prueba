@@ -72,26 +72,7 @@ public class Cliente implements Serializable {
 		this.tlf = tlf;
 	}
 
-	public List<Factura> getFacturas() {
-		return this.facturas;
+	public String toString() {
+		return "Cliente: DNI:" +this.nif+ " Se llama " + this.nombre + " Vive en " + this.domicilio + " Ciudad: "+ this.ciudad+ " Llamar al " + this.tlf;
 	}
-
-	public void setFacturas(List<Factura> facturas) {
-		this.facturas = facturas;
-	}
-
-	public Factura addFactura(Factura factura) {
-		getFacturas().add(factura);
-		factura.setCliente(this);
-
-		return factura;
-	}
-
-	public Factura removeFactura(Factura factura) {
-		getFacturas().remove(factura);
-		factura.setCliente(null);
-
-		return factura;
-	}
-
 }
