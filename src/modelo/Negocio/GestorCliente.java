@@ -3,7 +3,6 @@ package modelo.Negocio;
 import java.util.List;
 
 import modelo.entidad.Cliente;
-import modelo.entidad.Persona;
 import modelo.persistencia.DaoCliente;
 
 //van aqui nuestras reglas de negocio.

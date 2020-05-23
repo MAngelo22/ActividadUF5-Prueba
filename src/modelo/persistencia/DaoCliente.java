@@ -9,7 +9,6 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import modelo.entidad.Cliente;
-import modelo.entidad.Persona;
 
 public class DaoCliente {
 
